@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="BigContainer">
+            <div class="navigation-bar">
+                <div class="top-left">
+                  <div class="nav-link">
+                    <a href="index1.html"> About </a> <!--Entry Page, Change to background Info-->
+                  </div>
+                  <div class="nav-link">
+                    <a href="WebDev.html"> Setup </a> <!--Title that comes up in the browser-->
+                  </div>
+                  <div class="nav-link">
+                    <a href="CivilEngineering.html"> Sources/API's </a>
+                  </div>
+                  <div class="nav-link">
+                   <a href="CivilEngineering.html"> Air Quality Data </a>
+                 </div>
+                 <div class="nav-link">
+                   <a href="Control_Module.html"> Module Control </a>
+                 </div>
+                </div>
+                <div class="top-right">
+                  <div class="name-tag">
+                    <div> The Fan Club </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="Content-Containter">
+                <form action="https://api.particle.io/v1/devices/3b002c000547393035313139/function?access_token=" method="POST"></form>
+                <label for="status">Status</label>
+                <input id="status" type="text" name="arg">
+                <button class="btn btn1" type="submit">Run</button>
+              </div>
+        </div>
+    </body>
+</html>
+
